@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.GameOverScreenController">
+    <children>
+        <ImageView fitHeight="406.0" fitWidth="400.0" layoutY="-3.0" pickOnBounds="true">
+            <image>
+                <Image url="@gameover.jpg" />
+            </image>
+        </ImageView>
+        <Text layoutX="99.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER!">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="80.0" layoutX="112.0" layoutY="112.0" stroke="TRANSPARENT" strokeType="INSIDE" width="176.0" />
+        <Text layoutX="144.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High Score: 128">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="149.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Score: 19">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Button layoutX="85.0" layoutY="254.0" mnemonicParsing="false" onAction="#switchToGameScreen" text="Restart" />
+        <Button layoutX="164.0" layoutY="254.0" mnemonicParsing="false" onAction="#switchToGameScreen" text="Revive (-5)" />
+        <Button layoutX="263.0" layoutY="254.0" mnemonicParsing="false" onAction="#switchToMainScreen" text="Main Menu" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111111" height="47.0" layoutX="312.0" layoutY="20.0" opacity="0.15" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+        <Text layoutX="327.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="27">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="27.0" fitWidth="64.0" layoutX="349.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@cherry.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

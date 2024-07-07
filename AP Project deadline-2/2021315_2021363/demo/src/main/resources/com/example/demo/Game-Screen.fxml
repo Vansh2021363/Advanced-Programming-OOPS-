@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="401.0" pickOnBounds="true">
+            <image>
+                <Image url="@bg1.jpg" />
+            </image>
+        </ImageView>
+        <Text layoutX="102.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hold the Up Arrow key to expand the stick" textAlignment="CENTER" wrappingWidth="196.76593017578125">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0f0f0f4c" height="52.0" layoutX="166.0" layoutY="25.0" opacity="0.4" stroke="TRANSPARENT" strokeType="INSIDE" width="68.0" />
+        <Text fill="WHITE" layoutX="192.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111111" height="47.0" layoutX="312.0" layoutY="20.0" opacity="0.15" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+        <Text layoutX="327.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="27.0" fitWidth="64.0" layoutX="349.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@cherry.png" />
+            </image>
+        </ImageView>
+      <Button layoutX="29.0" layoutY="31.0" mnemonicParsing="false" onAction="#switchToPauseScreen" text="Pause" textFill="#54bc14" />
+    </children>
+</AnchorPane>
